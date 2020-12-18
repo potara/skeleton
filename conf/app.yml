@@ -1,0 +1,36 @@
+doctrine:
+  db:
+    driver: 'pdo_mysql'
+    host: 'localhost'
+    port: '3306'
+    user: 'root'
+    password: ''
+    dbname: ''
+    charset: 'utf8mb4'
+
+swiftmailer:
+  entity: '\Potara\Core\Provider\Swiftmailer\SwiftmailerEntity'
+  host: localhost
+  port: 25
+  encryption:
+  username:
+  password:
+  auth:
+  stream_options: []
+
+jwt:
+  entity: '\Potara\Core\Provider\Jwt\JwtEntity'
+  auth_user: '\Potara\Core\Provider\Jwt\JwtCheckuser'
+  secure: false
+  attribute: token
+  header: X-Token
+  regexp: "/(.*)/"
+  path:
+    - '/'
+  ignore:
+    - '/auth'
+  life: 3600
+  refresh: 36000
+  secret: secretkey
+  cookie: secretkey
+  algorithm: HS384

@@ -1,0 +1,20 @@
+{
+  "name": "potara/skeleton",
+  "description": "Skeleton from Potara",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bruno Lima",
+      "email": "brunolimame@gmail.com",
+      "homepage": "https://brunolima.me"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "potara/core": "0.x-dev"
+  }
+}
